@@ -34,6 +34,14 @@ The adjustable parameters and available options are listed below.
 * Diffusion noise (beta) scheduling: sigmoid, cosine, no scheduling (constant). 
 * Parameters: # of diffusion steps 'num_steps', step size of skipped sampling 'skip'.
 
+### Trained Models
+The directories state_dict* contain trained models. The follwing explains which folder has which files. To reduce the size of the repository, we only uploaded the latest models. 
+* state_dict: linear diffusion models for the 3 simple channel models: AWGN, Rayleigh, and SSPA. And the encoder and decoder pairs that are trained with the generative models.
+* state_dict_WGAN: linear WGANs for the 3 simple channel models: AWGN, Rayleigh, and SSPA. And the encoder and decoder pairs that are trained with the generative models.
+* state_dict_DM: the diffusion model for Clarke's model.
+* state_dict_DCGAN, state_dict_WGAN_CNN, state_dict_convtransposedG: the WGAN models for Clarke's model with different neural networks. 
+
+
 ## Sources
 [hojonathanho/diffusion](https://https://github.com/hojonathanho/diffusion): the original paper of the diffusion denoising probabilistic models. 
 
